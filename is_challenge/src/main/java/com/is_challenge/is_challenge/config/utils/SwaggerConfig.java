@@ -1,4 +1,4 @@
-package com.is_challenge.is_challenge.utils;
+package com.is_challenge.is_challenge.config.utils;
 
 
 
@@ -21,7 +21,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-import static com.is_challenge.is_challenge.utils.SwaggerConstant.*;
+import static com.is_challenge.is_challenge.config.utils.SwaggerConstant.*;
 
 
 @Configuration
