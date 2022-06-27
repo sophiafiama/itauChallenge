@@ -1,5 +1,6 @@
 package com.is_challenge.is_challenge.apiUser.service.impl;
 
+import com.is_challenge.is_challenge.apiUser.entity.Role;
 import com.is_challenge.is_challenge.apiUser.entity.User;
 import com.is_challenge.is_challenge.apiUser.exception.UserNotFoundException;
 import com.is_challenge.is_challenge.apiUser.service.UserService;
@@ -20,6 +21,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User create(User user) {
+        System.out.println(user.toString());
+        if (user.getRoles().size() == 0)user.addRole(Role.READER);
         user.setPassword(pe.encode(user.getPassword()));
         return userRepository.save(user);
     }

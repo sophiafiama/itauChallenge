@@ -7,7 +7,10 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 
 @Builder
@@ -25,7 +28,9 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
-    private Integer role = 0;
+    @ElementCollection(fetch = FetchType.EAGER)
+    @CollectionTable(name = "roles")
+    private Set<Integer> roles = new HashSet<>();
     private Integer actions = 0;
     @OneToMany(
             mappedBy = "user"
@@ -38,21 +43,31 @@ public class User {
     @JsonIgnore
     private List<Comment> comments = new ArrayList<>();
 
+    public Set<Role> getRoles() {
+        return roles.stream().map(Role::toEnum).collect(Collectors.toSet());
+    }
 
-    public void addingActions(){
+    public void addRole(Role role) {
+        roles.add(role.getCod());
+    }
+
+    public void addingActions() {
         ++actions;
     }
+
     public void permissionRole() {
-        if (this.actions>0 &&  this.actions< 20) {
-            this.role = 0;
+        if (this.actions > 0 && this.actions < 20) {
+            addRole(Role.READER);
 
         } else if (this.actions >= 20 && this.actions < 100) {
-            this.role = 1;
+            addRole(Role.BASIC);
         } else if (this.actions >= 100 && this.actions < 1000) {
-            this.role = 2;
-        }else {
-            this.role = 3;
+            addRole(Role.ADVANCED);
+        } else {
+            addRole(Role.ADMIN);
         }
-    }
+    } ;
+
 
 }
+

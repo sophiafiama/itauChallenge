@@ -1,8 +1,11 @@
 package com.is_challenge.is_challenge.apiUser.dto;
 
-import com.is_challenge.is_challenge.apiUser.entity.Roles;
 import lombok.Getter;
 import lombok.Setter;
+
+
+import java.util.List;
+
 
 @Getter
 @Setter
