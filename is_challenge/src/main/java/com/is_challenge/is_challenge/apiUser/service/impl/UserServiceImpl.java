@@ -5,6 +5,7 @@ import com.is_challenge.is_challenge.apiUser.exception.UserNotFoundException;
 import com.is_challenge.is_challenge.apiUser.service.UserService;
 import com.is_challenge.is_challenge.apiUser.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,10 +15,12 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
+    private final BCryptPasswordEncoder pe;
 
 
     @Override
     public User create(User user) {
+        user.setPassword(pe.encode(user.getPassword()));
         return userRepository.save(user);
     }
 
