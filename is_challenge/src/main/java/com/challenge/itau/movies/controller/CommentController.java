@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,6 +18,7 @@ public class CommentController {
     private final ModelMapper modelMapper;
     private final CommentService commentService;
 
+    @PreAuthorize("hasAnyRole('BASIC')")
     @PostMapping
     public ResponseEntity<Void> create(@RequestBody CommentDTO dto) {
         commentService.create(modelMapper.map(dto, Comment.class));

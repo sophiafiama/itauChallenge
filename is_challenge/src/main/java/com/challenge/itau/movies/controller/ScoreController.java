@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,6 +17,7 @@ public class ScoreController {
     private final ScoreService scoreService;
     private final ModelMapper modelMapper;
 
+    @PreAuthorize("hasAnyRole('READER')")
     @PostMapping
     public ResponseEntity<Void> create(@RequestBody ScoreDTO dto) {
         scoreService.create(modelMapper.map(dto, Score.class));

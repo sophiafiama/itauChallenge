@@ -1,0 +1,7 @@
+package com.challenge.itau.config.exception;
+
+public class AuthorizationException extends RuntimeException {
+    public AuthorizationException(String message) {
+        super(message);
+    }
+}

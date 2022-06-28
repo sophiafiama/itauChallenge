@@ -1,5 +1,7 @@
 package com.challenge.itau.users.service.impl;
 
+import com.challenge.itau.config.exception.AuthorizationException;
+import com.challenge.itau.config.security.UserSpringSecurity;
 import com.challenge.itau.users.exception.UserNotFoundException;
 import com.challenge.itau.users.repository.UserRepository;
 import com.challenge.itau.users.entity.Role;
@@ -36,6 +38,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User get(Long id) {
+        UserSpringSecurity user = UserSpringSecurityService.authenticated();
+        if (user == null || !user.hasRole(Role.ADMIN) && !id.toString().equals(user.getId())) {
+            throw new AuthorizationException("Acesso negado");
+        }
         return userRepository.findById(id).orElseThrow( () -> new UserNotFoundException("User with id " + id + " not found!"));
     }
 

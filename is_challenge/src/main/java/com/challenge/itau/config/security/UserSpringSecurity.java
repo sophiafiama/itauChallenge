@@ -1,8 +1,10 @@
 package com.challenge.itau.config.security;
 
+import com.challenge.itau.users.entity.Role;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
@@ -53,5 +55,9 @@ public class UserSpringSecurity implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public boolean hasRole(Role role) {
+        return getAuthorities().contains(new SimpleGrantedAuthority(role.getName()));
     }
 }
