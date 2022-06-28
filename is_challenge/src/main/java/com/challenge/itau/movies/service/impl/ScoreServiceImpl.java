@@ -63,8 +63,9 @@ public class ScoreServiceImpl implements ScoreService {
         userToBeUpdated.addingActions();
         userToBeUpdated.permissionRole();
 
-        userRepository.saveAndFlush(userToBeUpdated);
-        movieRepository.saveAndFlush(movieToBeUpdated);
+        userRepository.save(userToBeUpdated);
+        movieRepository.save(movieToBeUpdated);
+
         return score;
     }
 }

@@ -4,6 +4,7 @@ import com.challenge.itau.users.entity.User;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Builder
@@ -30,4 +31,7 @@ public class Comment {
     private Movie movie;
     private String title;
     private String description;
+//    private List<Comment> answers;
+    private Boolean isRepeated = null;
+
 }
