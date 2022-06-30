@@ -1,12 +1,14 @@
 package com.challenge.itau.movies.controller;
 
 import com.challenge.itau.movies.dto.movie.MovieDTO;
+import com.challenge.itau.movies.dto.movie.MovieResponseDTO;
 import com.challenge.itau.movies.entity.Movie;
 import com.challenge.itau.movies.service.MovieService;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -27,12 +29,13 @@ public class MovieController {
                 .build();
     }
 
+    @PreAuthorize("hasAnyRole('READER')")
     @GetMapping("{id}")
-    public ResponseEntity<MovieDTO> get(@PathVariable Long id) {
+    public ResponseEntity<MovieResponseDTO> get(@PathVariable Long id) {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(
-                        modelMapper.map(service.getById(id), MovieDTO.class)
+                        modelMapper.map(service.getById(id), MovieResponseDTO.class)
                 );
     }
 }

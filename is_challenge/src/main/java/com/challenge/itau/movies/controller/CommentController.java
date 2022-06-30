@@ -1,8 +1,11 @@
 package com.challenge.itau.movies.controller;
 
 import com.challenge.itau.movies.dto.comment.CommentDTO;
+import com.challenge.itau.movies.dto.enjoy.EnjoyDTO;
 import com.challenge.itau.movies.entity.Comment;
+import com.challenge.itau.movies.entity.Enjoy;
 import com.challenge.itau.movies.service.CommentService;
+import com.challenge.itau.movies.service.EnjoyService;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
@@ -17,6 +20,7 @@ public class CommentController {
 
     private final ModelMapper modelMapper;
     private final CommentService commentService;
+    private final EnjoyService enjoyService;
 
     @PreAuthorize("hasAnyRole('BASIC')")
     @PostMapping
@@ -33,4 +37,17 @@ public class CommentController {
                 .status(HttpStatus.OK)
                 .body(modelMapper.map(commentService.get(id), CommentDTO.class));
     }
+
+
+
+    @PreAuthorize("hasAnyRole('ADVANCED')")
+    @PostMapping("/enjoy")
+    public ResponseEntity<Void> create(@RequestBody EnjoyDTO dto) {
+        enjoyService.create(modelMapper.map(dto, Enjoy.class));
+        return ResponseEntity
+                .status(HttpStatus.NO_CONTENT)
+                .build();
+    }
+
+
 }

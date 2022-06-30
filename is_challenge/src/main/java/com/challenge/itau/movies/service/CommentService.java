@@ -11,6 +11,4 @@ public interface CommentService {
     Comment get(Long id);
     List<Comment> getAll();
 
-    interface MovieApiClientService {
-    }
 }

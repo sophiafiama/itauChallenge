@@ -1,10 +1,10 @@
 package com.challenge.itau.users.entity;
-
+import com.challenge.itau.movies.entity.Answer;
 import com.challenge.itau.movies.entity.Comment;
+import com.challenge.itau.movies.entity.Enjoy;
 import com.challenge.itau.movies.entity.Score;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -42,6 +42,18 @@ public class User {
     )
     @JsonIgnore
     private List<Comment> comments = new ArrayList<>();
+    @OneToMany(
+            mappedBy = "user"
+    )
+    @JsonIgnore
+    private List<Enjoy> enjoyList = new ArrayList<>();
+
+    @OneToMany(
+            mappedBy = "user"
+    )
+    @JsonIgnore
+    private List<Answer> answers = new ArrayList<>();
+
 
     public Set<Role> getRoles() {
         return roles.stream().map(Role::toEnum).collect(Collectors.toSet());
@@ -56,11 +68,11 @@ public class User {
     }
 
     public void permissionRole() {
-        if (this.actions > 0 && this.actions < 20) {
+        if (this.actions > 0 && this.actions < 5) {
             addRole(Role.READER);
-        } else if (this.actions >= 20 && this.actions < 100) {
+        } else if (this.actions >= 5 && this.actions < 10) {
             addRole(Role.BASIC);
-        } else if (this.actions >= 100 && this.actions < 1000) {
+        } else if (this.actions >= 15 && this.actions < 20) {
             addRole(Role.ADVANCED);
         } else {
             addRole(Role.ADMIN);

@@ -59,6 +59,7 @@ public class ScoreServiceImpl implements ScoreService {
         score.setMovie(movieToBeUpdated);
 
         movieToBeUpdated.getScores().add(score);
+        movieToBeUpdated.mediaCount(score.getScore());
         userToBeUpdated.getScores().add(score);
         userToBeUpdated.addingActions();
         userToBeUpdated.permissionRole();

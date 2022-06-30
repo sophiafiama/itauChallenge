@@ -1,10 +1,13 @@
 package com.challenge.itau.movies.entity;
 
 import com.challenge.itau.users.entity.User;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
+
 
 @Entity
 @Builder
@@ -31,7 +34,17 @@ public class Comment {
     private Movie movie;
     private String title;
     private String description;
-//    private List<Comment> answers;
+    @OneToMany(
+            mappedBy = "comment"
+    )
+    @JsonIgnore
+    private List<Enjoy> enjoyList = new ArrayList<>();
+    @OneToMany(
+            mappedBy = "comment"
+    )
+    @JsonIgnore
+    private List<Answer> answers = new ArrayList<>();
     private Boolean isRepeated = null;
+
 
 }

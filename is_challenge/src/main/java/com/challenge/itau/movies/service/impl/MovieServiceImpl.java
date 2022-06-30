@@ -18,7 +18,6 @@ public class MovieServiceImpl implements MovieService {
 
     @Override
     public Movie create(Movie movie) {
-        System.out.println(movie.toString());
         return repository.save(movie);
     }
 
