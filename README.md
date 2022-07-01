@@ -12,7 +12,7 @@
  - LEITOR: Após o cadastro, esse usuário poderá logar e buscar por um filme. Ele poderá ver as informações de um filme, comentários e dar uma nota para o filme. A cada filme que o usuário avaliar, ele ganha 1 ponto em seu perfil.
  - BÁSICO: O usuário leitor poderá se tornar BÁSICO quando adquirir 20 pontos. Nesse perfil será possível postar comentários, notas e responder comentários. Cada resposta que o usuário enviar, ele ganha 1 ponto.
  - AVANÇADO: O usuário básico poderá se tornar AVANÇADO quando adquirir 100 pontos. Esse perfil tem as capacidades do BÁSICO, e mais citar outros comentários (comentários feitos por outros usuários) e marcar comentários como “gostei” ou "não gostei”.
- - MODERADOR: Um usuário poderá se tornar MODERADOR de 2 formas: um moderador torna outro usuário moderador ou por pontuação, para se tornar MODERADOR o usuário deverá ter 1000 pontos. O moderador tem as capacidades do AVANÇADO, e mais excluir um comentário ou marcar como repetida.
+ - MODERADOR pontuação de 1000 pontos. 
 - Login e autenticação com JWT
 - Um usuário não poderá logar sem ter feito um cadastro;
 - Um usuário não poderá ver filmes e comentários e notas sem estar logado;
@@ -62,6 +62,8 @@ spring.datasource.password={suaSenha}
   - Caso um usuário tente 3 vezes logar e erre, na 4 vez deverá ser retornado uma mensagem de “limite de tentativas excedido “;
   - Um usúário só poderá interagir com a aplicação com seu ID;
   - Validação dos dados inviados, objetos nulos e etc;
+  - O moderador tem as capacidades do AVANÇADO, e mais excluir um comentário ou marcar como repetida.
+  - MODERADOR: Um usuário poderá se tornar MODERADOR de 2 formas: um moderador torna outro usuário moderador ou por pontuação, para se tornar MODERADOR o usuário deverá ter 1000 pontos. O moderador tem as capacidades do AVANÇADO, e mais excluir um comentário ou marcar como repetida.
 
 
 ## Contato 
