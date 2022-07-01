@@ -22,13 +22,13 @@
 - Um usuário com token invalido não poderá realizar ações no sistema.
 
 ## 🛠 Tecnologias utilizadas
-[JAVA]: https://www.java.com/pt-BR/
-[MySQL]: https://www.mysql.com/
-[SWAGGER]: https://swagger.io/tools/swagger-ui/
-[SPRING]: https://spring.io/projects/spring-boot
-[JWT]: https://jwt.io/
-[INTELIJ IDEA]: https://www.jetbrains.com/pt-br/idea/
-[MAVEN]: https://maven.apache.org/download.cgi
+- [JAVA]
+- [MySQL]
+- [SWAGGER]
+- [SPRING]
+- [JWT]
+- [INTELIJ IDEA]
+- [MAVEN]
 
 
 ### 🎮 Como rodar o projeto
