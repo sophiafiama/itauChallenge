@@ -32,7 +32,6 @@ public class Movie {
     )
     @JsonIgnore
     private List<Comment> comments = new ArrayList<>();
-    private String imdbID;
     private int scoreTotal;
     private int count;
     private double mediaScore;

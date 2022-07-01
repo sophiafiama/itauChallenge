@@ -12,6 +12,6 @@ import lombok.Setter;
 public class MovieDTO {
 
     private String title;
-    private String imdbID;
+
 
 }

@@ -18,7 +18,6 @@ public class MovieResponseDTO {
     private Long id;
     private String title;
     private List<ScoreResponseDTO> scores;
-    private String imdbID;
     private List<CommentResponseDTO> comments;
     private double mediaScore;
 }
