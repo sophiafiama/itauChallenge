@@ -32,16 +32,24 @@
 
 ### 🎮 Como rodar o projeto
 - Realize o clone do repositório 
-- Execute o projeto [JAVA]
+- Altere a senha do banco de dados no arquivo 
+spring.datasource.username={seuUsuarioMySQL}
+spring.datasource.password={suaSenha}
+- Verifique se as dependências foram baixadas, "Reload All Maven Projectss"
+- Execute o projeto [JAVA], Run ItauApplication 
 - Utilize a coleção de requisições [POSTMAN]
 - Crie um usuário 
-- Realize o login 
 - Crie um filme
-- Utilizando os IDs criados você poderá realizar as demais requisições 
+- Utilizando os IDs de User e Movie  você poderá realizar as demais requisições 
+- Realize o login do usuário, utilizando email e senha
 - Adicione o token gerado no login do usuário no Header de todas as demais requisições. KEY : Authorization, VALUE : Token gerado no Access-Control-Allow-Headers após loging
 - Atribua uma nota ao Filme
 - Atribua um comentário ao Filme
+- A cada interação com a aplicação (Requisições POST) o usuário somará pontos ao atributo actions, além disso será verificado a quantidade de pontos acumulados nesse atributo para que seja adicionada permições ao usuário. 
 
+## Contato 
+[WHATSAPP] : (11) 96486-4690
+EMAIL: fiama.sophia.sf@gmail.com
 
 
 [JAVA]: https://www.java.com/pt-BR/
@@ -57,5 +65,9 @@
 [MAVEN]: https://maven.apache.org/download.cgi
 
 [POSTMAN]: https://www.postman.com/
+
+[WHATSAPP]: https://www.whatsapp.com/?lang=pt_br
+
+
 
 
