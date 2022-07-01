@@ -29,6 +29,7 @@
 - [JWT]
 - [INTELIJ IDEA]
 - [MAVEN]
+- Bade url : http://localhost:8080/
 
 
 ### 🎮 Como rodar o projeto
