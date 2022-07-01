@@ -28,6 +28,7 @@
 [SWAGGER]: https://swagger.io/tools/swagger-ui/
 [SPRING]: https://spring.io/projects/spring-boot
 [JWT]: https://jwt.io/
+[INTELIJ IDEA]: https://www.jetbrains.com/pt-br/idea/
 
 
 ### 🎮 Como rodar o projeto
@@ -63,6 +64,8 @@
 - [JWT]
 - [MAVEN]
 - [POSTMAN]
+- [INTELIJ IDEA]
+
 
 ### 🎮 Como rodar o projeto
 - Realize o clone do repositório 
@@ -107,4 +110,5 @@ EMAIL: fiama.sophia.sf@gmail.com
 [POSTMAN]: https://www.postman.com/
 
 [WHATSAPP]: https://www.whatsapp.com/?lang=pt_br
+[INTELIJ IDEA]: https://www.jetbrains.com/pt-br/idea/
 
