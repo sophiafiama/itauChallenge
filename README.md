@@ -28,7 +28,7 @@
 [SPRING]: https://spring.io/projects/spring-boot
 [JWT]: https://jwt.io/
 [INTELIJ IDEA]: https://www.jetbrains.com/pt-br/idea/
-
+[MAVEN]: https://maven.apache.org/download.cgi
 
 
 ### 🎮 Como rodar o projeto
@@ -48,6 +48,8 @@ spring.datasource.password={suaSenha}
 - Atribua um comentário ao Filme
 - A cada interação com a aplicação (Requisições POST) o usuário somará pontos ao atributo actions, além disso será verificado a quantidade de pontos acumulados nesse atributo para que seja adicionada permições ao usuário. 
 - Todos os modelos de requisição estão adicionados a coleção
+
+
 
 ### 💾 Database
 
