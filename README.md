@@ -22,7 +22,7 @@
 - Um usuário com token invalido não poderá realizar ações no sistema.
 
 ## 🛠 Tecnologias utilizadas
-- [JAVA]
+- [JAVA] : 11
 - [MySQL]
 - [SWAGGER]
 - [SPRING]
