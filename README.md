@@ -56,6 +56,13 @@ spring.datasource.password={suaSenha}
 
 ![image](https://user-images.githubusercontent.com/85448082/176965107-0fd87fea-e1e3-45a5-a5f2-62a6cff1f0da.png)
 
+  ## 👾 Requisitos propostos NÃO realizados e possiveis melhorias a serem implementadas: 
+  - A busca pelo filme na sua api deve ser feita consultando uma api pública chamada OMDb API (https://www.omdbapi.com/) e os comentários e notas devem ser salvos no seu sistema;
+  - Todas as tentativas falhas de login devem ser salvas em um cache;
+  - Caso um usuário tente 3 vezes logar e erre, na 4 vez deverá ser retornado uma mensagem de “limite de tentativas excedido “;
+  - Um usúário só poderá interagir com a aplicação com seu ID;
+  - Validação dos dados inviados, objetos nulos e etc;
+
 
 ## Contato 
 [WHATSAPP] : (11) 96486-4690
