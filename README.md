@@ -48,6 +48,9 @@ spring.datasource.password={suaSenha}
 - A cada interação com a aplicação (Requisições POST) o usuário somará pontos ao atributo actions, além disso será verificado a quantidade de pontos acumulados nesse atributo para que seja adicionada permições ao usuário. 
 - Todos os modelos de requisição estão adicionados a coleção
 
+![image](https://user-images.githubusercontent.com/85448082/176965107-0fd87fea-e1e3-45a5-a5f2-62a6cff1f0da.png)
+
+
 ## Contato 
 [WHATSAPP] : (11) 96486-4690
 EMAIL: fiama.sophia.sf@gmail.com
