@@ -22,8 +22,13 @@
 - Um usuário com token invalido não poderá realizar ações no sistema.
 
 ## 🛠 Tecnologias utilizadas
+
 [JAVA]: https://www.java.com/pt-BR/
+
 [MySQL]: https://www.mysql.com/
+
 [SWAGGER]: https://swagger.io/tools/swagger-ui/
+
 [SPRING]: https://spring.io/projects/spring-boot
+
 [JWT]: https://jwt.io/
