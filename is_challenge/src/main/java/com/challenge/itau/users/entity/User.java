@@ -68,11 +68,11 @@ public class User {
     }
 
     public void permissionRole() {
-        if (this.actions > 0 && this.actions < 5) {
+        if (this.actions > 0 && this.actions < 20) {
             addRole(Role.READER);
-        } else if (this.actions >= 5 && this.actions < 10) {
+        } else if (this.actions >= 5 && this.actions < 100) {
             addRole(Role.BASIC);
-        } else if (this.actions >= 15 && this.actions < 20) {
+        } else if (this.actions >= 100 && this.actions < 1000) {
             addRole(Role.ADVANCED);
         } else {
             addRole(Role.ADMIN);
