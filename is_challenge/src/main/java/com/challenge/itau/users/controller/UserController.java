@@ -1,6 +1,7 @@
 package com.challenge.itau.users.controller;
 
 import com.challenge.itau.users.dto.UserResponse;
+import com.challenge.itau.users.dto.UserResponseDTO;
 import com.challenge.itau.users.entity.User;
 import com.challenge.itau.users.service.UserService;
 import com.challenge.itau.users.dto.UserDTO;
@@ -29,10 +30,10 @@ public class UserController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<UserResponse> get(@PathVariable Long id) {
+    public ResponseEntity<UserResponseDTO> get(@PathVariable Long id) {
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(modelMapper.map(service.get(id), UserResponse.class));
+                .body(modelMapper.map(service.get(id), UserResponseDTO.class));
     }
 
 }
