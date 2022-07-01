@@ -27,6 +27,8 @@
 - [SWAGGER]
 - [SPRING]
 - [JWT]
+- [MAVEN]
+- [POSTMAN]
 
 
 
@@ -39,3 +41,7 @@
 [SPRING]: https://spring.io/projects/spring-boot
 
 [JWT]: https://jwt.io/
+
+[MAVEN]: https://maven.apache.org/download.cgi
+
+[POSTMAN]: https://www.postman.com/
