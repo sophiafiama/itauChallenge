@@ -24,7 +24,7 @@
 ## 🛠 Tecnologias utilizadas
 - [JAVA] : 11
 - [MySQL]
-- [SWAGGER]
+- [SWAGGER] : http://localhost:8080/swagger-ui.html#/
 - [SPRING]
 - [JWT]
 - [MAVEN]
