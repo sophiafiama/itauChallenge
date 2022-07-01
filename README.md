@@ -5,7 +5,7 @@
 - Desafio de código proposto pela LetsCode para avaliação de candidatos para ingressar no Bootcamp Itaú{devs};
 - No Coding Challenge (Desafio Técnico), irá avaliar o desempenho do aluno no projeto de acordo com os requisitos técnicos e não-técnicos solicitados. 
   
-  ## 👾 Requisitos realizados
+ ## 👾 Requisitos realizados
  - Criação de api para cadastro do usuário;
  - Perfis de usuário :  LEITOR(0, "ROLE_READER"),BÁSICO(1, "ROLE_BASIC"),  AVANÇADO(2, "ROLE_ADVANCED"), MODERADOR(3, "ROLE_ADMIN");
  - LEITOR: Após o cadastro, esse usuário poderá logar e buscar por um filme. Ele poderá ver as informações de um filme, comentários e dar uma nota para o filme. A cada filme que o usuário avaliar, ele ganha 1 ponto em seu perfil.
@@ -31,6 +31,17 @@
 - [POSTMAN]
 
 ### 🎮 Como rodar o projeto
+- Realize o clone do repositório 
+- Execute o projeto [JAVA]
+- Utilize a coleção de requisições [POSTMAN]
+- Crie um usuário 
+- Realize o login 
+- Crie um filme
+- Utilizando os IDs criados você poderá realizar as demais requisições 
+- Adicione o token gerado no login do usuário no Header de todas as demais requisições
+- Atribua uma nota ao Filme
+- Atribua um comentário ao Filme
+
 
 
 
