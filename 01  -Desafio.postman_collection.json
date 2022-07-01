@@ -44,7 +44,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWFAdGVzdGUuY29tIiwiZXhwIjo2MDAwMTY1NjcwOTIyMX0.U_OqVRW1FBg2dThGAbxcONscSq5kwuveBAyXkDkJ5ZsvPCLpmat96V6pJEqFI68vOy-uyryUth7RqkipaoHlVQ",
 								"type": "text"
 							}
 						],
@@ -129,13 +129,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWFAdGVzdGUuY29tIiwiZXhwIjo2MDAwMTY1NjcwOTIyMX0.U_OqVRW1FBg2dThGAbxcONscSq5kwuveBAyXkDkJ5ZsvPCLpmat96V6pJEqFI68vOy-uyryUth7RqkipaoHlVQ",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n \"user\": {\r\n    \"id\":\"1\"\r\n },\r\n\r\n    \"movie\":{\r\n        \"id\":\"1\"\r\n    },\r\n    \"score\" : 6\r\n}",
+							"raw": "{\r\n \"user\": {\r\n    \"id\":\"1\"\r\n },\r\n    \"movie\":{\r\n        \"id\":\"1\"\r\n    },\r\n    \"score\" : 10\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -194,7 +194,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWFAdGVzdGUuY29tIiwiZXhwIjo2MDAwMTY1NjcwOTIyMX0.U_OqVRW1FBg2dThGAbxcONscSq5kwuveBAyXkDkJ5ZsvPCLpmat96V6pJEqFI68vOy-uyryUth7RqkipaoHlVQ",
 								"type": "text"
 							}
 						],
@@ -228,7 +228,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWFAdGVzdGUuY29tIiwiZXhwIjo2MDAwMTY1NjcwOTIyMX0.U_OqVRW1FBg2dThGAbxcONscSq5kwuveBAyXkDkJ5ZsvPCLpmat96V6pJEqFI68vOy-uyryUth7RqkipaoHlVQ",
 								"type": "text"
 							}
 						],
@@ -259,7 +259,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWFAdGVzdGUuY29tIiwiZXhwIjo2MDAwMTY1NjcwOTIyMX0.U_OqVRW1FBg2dThGAbxcONscSq5kwuveBAyXkDkJ5ZsvPCLpmat96V6pJEqFI68vOy-uyryUth7RqkipaoHlVQ",
 								"type": "text"
 							}
 						],
@@ -296,7 +296,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWFAdGVzdGUuY29tIiwiZXhwIjo2MDAwMTY1NjcwOTIyMX0.U_OqVRW1FBg2dThGAbxcONscSq5kwuveBAyXkDkJ5ZsvPCLpmat96V6pJEqFI68vOy-uyryUth7RqkipaoHlVQ",
 								"type": "text"
 							}
 						],
@@ -342,13 +342,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWFAdGVzdGUuY29tIiwiZXhwIjo2MDAwMTY1NjcwOTIyMX0.U_OqVRW1FBg2dThGAbxcONscSq5kwuveBAyXkDkJ5ZsvPCLpmat96V6pJEqFI68vOy-uyryUth7RqkipaoHlVQ",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n \"user\": {\r\n    \"id\":\"1\"\r\n },\r\n \"comment\":{\r\n        \"id\":\"1\"\r\n    },\r\n    \"enjoy\" : \"true\"\r\n}",
+							"raw": "{\r\n \"user\": {\r\n    \"id\":\"1\"\r\n },\r\n \"comment\":{\r\n        \"id\":\"1\"\r\n    },\r\n    \"enjoy\" : \"true\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -365,6 +365,46 @@
 							"path": [
 								"comments",
 								"enjoy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "answer",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWFAdGVzdGUuY29tIiwiZXhwIjo2MDAwMTY1NjcwOTIyMX0.U_OqVRW1FBg2dThGAbxcONscSq5kwuveBAyXkDkJ5ZsvPCLpmat96V6pJEqFI68vOy-uyryUth7RqkipaoHlVQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"user\": {\r\n    \"id\":\"1\"\r\n },\r\n \"comment\":{\r\n        \"id\":\"1\"\r\n    },\r\n\"answers\" : \" RESPONDENDO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/answer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"answer"
 							]
 						}
 					},
