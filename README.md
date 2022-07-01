@@ -38,10 +38,9 @@
 - Realize o login 
 - Crie um filme
 - Utilizando os IDs criados você poderá realizar as demais requisições 
-- Adicione o token gerado no login do usuário no Header de todas as demais requisições
+- Adicione o token gerado no login do usuário no Header de todas as demais requisições. KEY : Authorization, VALUE : Token gerado no Access-Control-Allow-Headers após loging
 - Atribua uma nota ao Filme
 - Atribua um comentário ao Filme
-
 
 
 
