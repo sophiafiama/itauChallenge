@@ -46,6 +46,7 @@ spring.datasource.password={suaSenha}
 - Atribua uma nota ao Filme
 - Atribua um comentário ao Filme
 - A cada interação com a aplicação (Requisições POST) o usuário somará pontos ao atributo actions, além disso será verificado a quantidade de pontos acumulados nesse atributo para que seja adicionada permições ao usuário. 
+- Todos os modelos de requisição estão adicionados a coleção
 
 ## Contato 
 [WHATSAPP] : (11) 96486-4690
