@@ -23,7 +23,7 @@
 
 ## 🛠 Tecnologias utilizadas
 - [JAVA]
-- [MySQL
+- [MySQL]
 - [SWAGGER]
 - [SPRING]
 - [JWT]
