@@ -30,21 +30,6 @@
 [INTELIJ IDEA]: https://www.jetbrains.com/pt-br/idea/
 
 
-### 🎮 Como rodar o projeto
-
-# Coding Challenge - Bootcamp Itaú{devs}
-
-
-## 🛠 Tecnologias utilizadas
-- [JAVA] : 11
-- [MySQL]
-- [SWAGGER] : http://localhost:8080/swagger-ui.html#/
-- [SPRING]
-- [JWT]
-- [MAVEN]
-- [POSTMAN]
-- [INTELIJ IDEA]
-
 
 ### 🎮 Como rodar o projeto
 - Realize o clone do repositório 
