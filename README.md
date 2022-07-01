@@ -31,7 +31,7 @@
 
 
 ### 🎮 Como rodar o projeto
-=======
+
 # Coding Challenge - Bootcamp Itaú{devs}
 
 ## 💻 Sobre o projeto
