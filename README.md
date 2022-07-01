@@ -30,6 +30,8 @@
 - [MAVEN]
 - [POSTMAN]
 
+### 🎮 Como rodar o projeto
+
 
 
 [JAVA]: https://www.java.com/pt-BR/
@@ -45,3 +47,5 @@
 [MAVEN]: https://maven.apache.org/download.cgi
 
 [POSTMAN]: https://www.postman.com/
+
+
