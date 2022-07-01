@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "aab96bfa-a2aa-4014-909a-c6e8e5b5ee7a",
+		"name": "01  -Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17529700"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sophia\",\r\n    \"email\": \"sophia@teste.com\",\r\n    \"password\": \"teste\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sophia@teste.com\",\r\n    \"password\": \"teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh_token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/auth/refresh_token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"refresh_token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "score",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"user\": {\r\n    \"id\":\"1\"\r\n },\r\n\r\n    \"movie\":{\r\n        \"id\":\"1\"\r\n    },\r\n    \"score\" : 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/scores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"scores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/scores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"scores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "movie",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \" O poderoso chefão\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/movies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comment",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"user\": {\r\n        \"id\":\"1\"\r\n    },\r\n    \"movie\":{\r\n        \"id\":\"1\"\r\n    },\r\n    \"title\" : \"Muito bom 2 \",\r\n    \"description\" : \"Filme Muito Bom\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"user\": {\r\n        \"id\":\"4\"\r\n    },\r\n    \"movie\":{\r\n        \"id\":\"1\"\r\n    },\r\n    \"title\" : \"Muito bom 2 \",\r\n    \"description\" : \"Muuuuito boooooom\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/1?",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "enjoy",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb3BoaWEwQHRlc3RlLmNvbSIsImV4cCI6NjAwMDE2NTY2OTg5MzJ9.dnzwd6OWQ-YJ7x9_0U2UJ2O4j0emOjBrRPoY2rnVWtbV6F23VktD74O3Pq7n_VzQngxurq_hW7XvXrEJSpNdQA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"user\": {\r\n    \"id\":\"1\"\r\n },\r\n \"comment\":{\r\n        \"id\":\"1\"\r\n    },\r\n    \"enjoy\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/enjoy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"enjoy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
