@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Coding Challenge - Bootcamp Itaú{devs}
 
 ## 💻 Sobre o projeto
@@ -108,7 +108,3 @@ EMAIL: fiama.sophia.sf@gmail.com
 
 [WHATSAPP]: https://www.whatsapp.com/?lang=pt_br
 
-
-
-
->>>>>>> fc4dcb351e4a17f73212ec459ca0066808ab4608
